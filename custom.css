@@ -1,0 +1,34 @@
+/* --- Fundo estilo Netflix --- */
+body {
+  background-image: url("background.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* --- Logo em texto estilizado "AGROLINK" --- */
+.skinHeader-withBackground .headerTopLeft img {
+  display: none;
+}
+.skinHeader-withBackground .headerTopLeft::before {
+  content: "AGROLINK";
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* --- Barra de login (overlay) --- */
+.cardContent, .emby-input {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  color: white !important;
+}
+
+/* --- Botões estilo Netflix red --- */
+.button-submit, .button {
+  background: #e50914 !important;
+  color: white !important;
+  border: none !important;
+}
